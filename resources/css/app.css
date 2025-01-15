@@ -30,9 +30,3 @@ main strong {
   @apply font-bold
 }
 
-main h1,
-main h2,
-main h3 {
-  @apply uppercase font-bold
-}
-

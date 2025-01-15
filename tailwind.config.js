@@ -21,7 +21,7 @@ export default {
       },
 
       maxWidth: {
-
+        outer: '125rem',
       },
 
       fontFamily: {
@@ -45,6 +45,10 @@ export default {
         '2xl': '1.375rem', // 22px
         '3xl': '1.6875rem', // 27px
         '4xl': '2.5rem',   // 40px
+
+        'heading-1': 'clamp(2.4rem, 4.5vw, 5rem)',
+        'body': 'clamp(1.25rem, 2vw, 1.563rem)',
+        'byline': 'clamp(4rem, 9vw, 11rem)'
       },
     
       zIndex: {

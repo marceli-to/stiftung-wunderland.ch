@@ -1,7 +1,10 @@
-<header class="{{ class }}">
+<header class="{{ class }} p-20">
+  <div class="flex justify-between max-w-outer mx-auto">
+    <div></div>
     <a href="/" title="Stiftung Wunderland">
       {{ partial:icons/logo class="block w-full h-auto max-w-130" }}
     </a>
-  {{ partial:menu/buttons/show }}
+    {{ partial:menu/buttons/show }}
+  </div>
   {{ partial:menu/wrapper }}
 </header>
