@@ -1,0 +1,38 @@
+@import "typo/webfonts.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] { display: none !important; }
+
+body {
+}
+
+main {
+  @apply flex-1;
+}
+
+main p:not(:last-child),
+main ul:not(:last-child) {
+  @apply mb-20 lg:mb-30
+}
+
+main ul {
+  @apply list-disc pl-5
+}
+
+main li {
+  @apply ml-12
+}
+
+main strong {
+  @apply font-bold
+}
+
+main h1,
+main h2,
+main h3 {
+  @apply uppercase font-bold
+}
+

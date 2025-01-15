@@ -1,0 +1,19 @@
+  <nav 
+    x-cloak 
+    x-show="menu"
+    x-transition:enter="transition ease-out duration-240"
+    x-transition:enter-start="opacity-0"
+    x-transition:enter-end="opacity-100"
+    x-transition:leave="transition ease-in duration-240"
+    x-transition:leave-start="opacity-100"
+    x-transition:leave-end="opacity-0"
+    class="bg-sky text-red-200 fixed w-full h-dvh left-0 top-0">
+    <div class="w-full h-dvh flex items-center justify-center relative">
+      <ul class="flex flex-col">
+        {{ nav:main }}
+          {{ partial:menu/item }}
+        {{ /nav:main }}
+      </ul>
+      {{ partial:menu/buttons/hide class="block w-30 lg:w-46 h-auto absolute right-20 top-27 lg:right-50 lg:top-50" }}
+    </div>
+  </nav>

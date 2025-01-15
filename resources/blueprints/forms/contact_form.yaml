@@ -1,0 +1,55 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: name
+            field:
+              type: text
+              display: Name
+              validate:
+                - required
+          -
+            handle: firstname
+            field:
+              type: text
+              display: Vorname
+              validate:
+                - required
+          -
+            handle: company
+            field:
+              type: text
+              display: Firma
+          -
+            handle: location
+            field:
+              type: text
+              display: PLZ/Ort
+              validate:
+                - required
+          -
+            handle: phone
+            field:
+              input_type: tel
+              type: text
+              display: Telefon
+              validate:
+                - required
+          -
+            handle: email
+            field:
+              input_type: email
+              type: text
+              display: E-Mail
+              validate:
+                - required
+          -
+            handle: message
+            field:
+              type: textarea
+              display: Nachricht
+              validate:
+                - required

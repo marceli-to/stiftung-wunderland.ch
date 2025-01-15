@@ -1,0 +1,18 @@
+<footer>
+  <ul class="">
+    {{ nav:privacy }}
+      <li>
+        <a 
+          href="{{ url }}" 
+          class="block "
+          target="{{ is_external ? '_blank' : '_self' }}"
+          title="{{ title }}">
+          {{ title }}
+         </a>
+      </li>
+    {{ /nav:privacy }}
+  </ul>
+</footer>
+{{ vite src="resources/js/app.js" }}
+</body>
+</html>

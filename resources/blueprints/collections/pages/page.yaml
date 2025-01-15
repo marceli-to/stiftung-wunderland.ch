@@ -1,0 +1,68 @@
+title: Page
+tabs:
+  main:
+    display: Content
+    sections:
+      -
+        display: Content
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: Titel
+              localizable: true
+          -
+            handle: page_elements
+            field:
+              type: replicator
+              display: Inhalte
+              localizable: true
+              collapse: true
+              sets:
+                main_elements:
+                  display: Hauptelemente
+                  icon: addon-boxes-stack
+                  sets:
+                    neues_set:
+                      display: 'Neues Set'
+                      fields: {  }
+  seo:
+    display: SEO
+    sections:
+      -
+        display: SEO
+        fields:
+          -
+            import: seo
+  settings:
+    display: Settings
+    sections:
+      -
+        display: Settings
+        fields:
+          -
+            import: settings
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true

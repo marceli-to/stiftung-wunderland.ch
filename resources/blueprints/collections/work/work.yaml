@@ -1,0 +1,46 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - work
+              max_items: 1
+              listable: false
+              localizable: true
+          -
+            handle: category
+            field:
+              type: terms
+              taxonomies:
+                - category
+              display: Kategorie
+              mode: select
+          -
+            handle: page_class
+            field:
+              default: page-work
+              type: hidden
+              display: 'Seiten CSS'
+title: Work

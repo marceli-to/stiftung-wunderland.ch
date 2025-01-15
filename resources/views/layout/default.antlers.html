@@ -1,0 +1,18 @@
+{{ partial:layout/head }}
+
+{{ partial:layout/body }}
+
+  {{ slot:header }}
+    {{ partial:layout/header }}
+  {{ /slot:header }}
+
+  {{ partial:layout/main }}
+
+  {{ slot:footer }}
+    {{ partial:layout/footer }}
+  {{ /slot:footer }}
+
+{{ /partial:layout/body }}
+
+</html>
+{{ partial:layout/credits }}

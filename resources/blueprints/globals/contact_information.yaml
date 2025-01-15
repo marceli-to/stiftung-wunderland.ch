@@ -1,0 +1,32 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: main_address
+            field:
+              type: textarea
+              display: Hauptadresse
+              width: 75
+          -
+            handle: main_address_phone_fax
+            field:
+              type: textarea
+              display: Telefon/Fax
+              width: 75
+          -
+            handle: main_address_email
+            field:
+              input_type: email
+              type: text
+              display: E-Mail
+              width: 75
+          -
+            handle: main_address_additional_email
+            field:
+              input_type: email
+              type: text
+              display: E-Mail
+              width: 75

@@ -1,0 +1,35 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-81c267f1.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/css/fonts/Tisa-Bold.woff": {
+    "file": "assets/Tisa-Bold-ba54a183.woff",
+    "src": "resources/css/fonts/Tisa-Bold.woff"
+  },
+  "resources/css/fonts/Tisa-Bold.woff2": {
+    "file": "assets/Tisa-Bold-d0aa5232.woff2",
+    "src": "resources/css/fonts/Tisa-Bold.woff2"
+  },
+  "resources/css/fonts/Tisa-Regular.woff": {
+    "file": "assets/Tisa-Regular-6027274a.woff",
+    "src": "resources/css/fonts/Tisa-Regular.woff"
+  },
+  "resources/css/fonts/Tisa-Regular.woff2": {
+    "file": "assets/Tisa-Regular-a6abe4e7.woff2",
+    "src": "resources/css/fonts/Tisa-Regular.woff2"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app-784f8f85.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/app.js": {
+    "css": [
+      "assets/app-784f8f85.css"
+    ],
+    "file": "assets/app-43672d97.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
