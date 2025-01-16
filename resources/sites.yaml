@@ -2,3 +2,7 @@ default:
   name: Deutsch
   locale: de
   url: '{{ config:app:url }}'
+fr:
+  name: Französisch
+  url: '{{ config:app:url }}/fr'
+  locale: fr

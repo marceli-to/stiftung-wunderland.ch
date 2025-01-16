@@ -30,3 +30,23 @@ main strong {
   @apply font-bold
 }
 
+/* Themes */
+.theme-white {
+  @apply bg-white;
+}
+
+.theme-scarlet {
+  @apply bg-scarlet;
+}
+
+.theme-cherry {
+  @apply bg-cherry;
+}
+
+.theme-blush {
+  @apply bg-blush;
+}
+
+.theme-ivory {
+  @apply bg-ivory;
+}

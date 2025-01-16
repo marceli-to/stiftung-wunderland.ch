@@ -1,0 +1,82 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              localizable: false
+              validate:
+                - required
+          -
+            handle: byline
+            field:
+              type: textarea
+              display: Byline
+              localizable: false
+          -
+            handle: intro
+            field:
+              buttons:
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - removeformat
+                - anchor
+                - superscript
+              toolbar_mode: floating
+              remove_empty_nodes: true
+              type: bard
+              display: Einleitung
+              localizable: false
+          -
+            handle: image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Bild
+              localizable: false
+              folder: liegenschaften
+          -
+            handle: content
+            field:
+              buttons:
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - removeformat
+                - anchor
+                - superscript
+              toolbar_mode: floating
+              remove_empty_nodes: true
+              type: bard
+              display: Inhalt
+              localizable: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - realestate
+              max_items: 1
+              listable: false
+              localizable: true
+title: 'Real Estate'

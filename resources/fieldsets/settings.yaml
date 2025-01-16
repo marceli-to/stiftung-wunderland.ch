@@ -8,6 +8,28 @@ fields:
       type: select
       display: 'Seiten CSS-Klasse'
   -
+    handle: page_theme
+    field:
+      options:
+        -
+          key: theme-white
+          value: Weiss
+        -
+          key: theme-scarlet
+          value: Rot
+        -
+          key: theme-cherry
+          value: Dunkelrot
+        -
+          key: theme-blush
+          value: Rosa
+        -
+          key: theme-ivory
+          value: Gelb
+      default: theme-white
+      type: select
+      display: 'Seiten Theme'
+  -
     handle: debug
     field:
       type: toggle

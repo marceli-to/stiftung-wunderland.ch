@@ -21,7 +21,7 @@ export default {
       },
 
       maxWidth: {
-        outer: '125rem',
+        page: '125rem',
       },
 
       fontFamily: {
@@ -45,7 +45,7 @@ export default {
         // '2xl': '1.375rem', // 22px
         // '3xl': '1.6875rem', // 27px
         // '4xl': '2.5rem',   // 40px
-
+        'xs': 'clamp(1.125rem, 1.25vw, 1.25rem)',
         'sm': 'clamp(1.25rem, 2vw, 1.563rem)',
         '3xl': 'clamp(2.4rem, 4.5vw, 5rem)',
         '4xl': 'clamp(4rem, 9vw, 11rem)'
