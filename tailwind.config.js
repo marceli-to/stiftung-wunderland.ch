@@ -37,18 +37,18 @@ export default {
       },      
 
       fontSize: {
-        'xs': '0.75rem',  // 12px
-        'sm': '0.8125rem', // 13px
-        'md': '1.0625rem', // 17px
-        'lg': '1.25rem',   // 20px
-        'xl': '1.3125rem', // 21px
-        '2xl': '1.375rem', // 22px
-        '3xl': '1.6875rem', // 27px
-        '4xl': '2.5rem',   // 40px
+        // 'xs': '0.75rem',  // 12px
+        // 'sm': '0.8125rem', // 13px
+        // 'md': '1.0625rem', // 17px
+        // 'lg': '1.25rem',   // 20px
+        // 'xl': '1.3125rem', // 21px
+        // '2xl': '1.375rem', // 22px
+        // '3xl': '1.6875rem', // 27px
+        // '4xl': '2.5rem',   // 40px
 
-        'heading-1': 'clamp(2.4rem, 4.5vw, 5rem)',
-        'body': 'clamp(1.25rem, 2vw, 1.563rem)',
-        'byline': 'clamp(4rem, 9vw, 11rem)'
+        'text-sm': 'clamp(1.25rem, 2vw, 1.563rem)',
+        'text-3xl': 'clamp(2.4rem, 4.5vw, 5rem)',
+        'text-4xl': 'clamp(4rem, 9vw, 11rem)'
       },
     
       zIndex: {
