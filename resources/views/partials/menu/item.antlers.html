@@ -2,7 +2,7 @@
   <a 
     href="{{ url }}" 
     @click="menu = false"
-    class="block text-3xl leading-[1.1] w-full hover:underline decoration-2 underline-offset-8 {{ is_current || is_parent ? 'underline' : '' }}"
+    class="block text-3xl leading-[1.1] w-full no-underline hover:text-scarlet transition-colors {{ is_current || is_parent ? 'text-scarlet' : '' }}"
     target="{{ is_external ? '_blank' : '_self' }}"
     title="{{ title }}">
     {{ title }}
