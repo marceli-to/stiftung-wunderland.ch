@@ -46,9 +46,9 @@ export default {
         // '3xl': '1.6875rem', // 27px
         // '4xl': '2.5rem',   // 40px
 
-        'text-sm': 'clamp(1.25rem, 2vw, 1.563rem)',
-        'text-3xl': 'clamp(2.4rem, 4.5vw, 5rem)',
-        'text-4xl': 'clamp(4rem, 9vw, 11rem)'
+        'sm': 'clamp(1.25rem, 2vw, 1.563rem)',
+        '3xl': 'clamp(2.4rem, 4.5vw, 5rem)',
+        '4xl': 'clamp(4rem, 9vw, 11rem)'
       },
     
       zIndex: {
