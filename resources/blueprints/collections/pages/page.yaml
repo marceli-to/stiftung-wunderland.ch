@@ -27,9 +27,13 @@ tabs:
                   display: Hauptelemente
                   icon: addon-boxes-stack
                   sets:
-                    neues_set:
-                      display: 'Neues Set'
-                      fields: {  }
+                    editor:
+                      display: Editor
+                      instructions: 'Texteditor hinzufügen'
+                      icon: text-formatting-markdown
+                      fields:
+                        -
+                          import: editor
   seo:
     display: SEO
     sections:

@@ -18,6 +18,7 @@ export default {
 
       screens: {
         'xs': '480px',
+        'huge': '2000px',
       },
 
       maxWidth: {

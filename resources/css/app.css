@@ -27,7 +27,11 @@ main li {
 }
 
 main strong {
-  @apply font-bold
+  @apply font-tisa-bold font-normal
+}
+
+main h1 {
+  @apply text-3xl leading-[1] mb-40 md:mb-70
 }
 
 /* Themes */

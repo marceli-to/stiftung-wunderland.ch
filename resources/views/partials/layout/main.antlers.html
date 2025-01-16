@@ -1,14 +1,19 @@
 <main role="main" class="flex-1 w-full px-20 max-w-page mx-auto">
-  {{# {{ template_content }} #}}
-  <div>
-    <h1 class="text-3xl leading-[1]">
-      Stiftung Wunderland
-    </h1>
-    <span class="text-4xl leading-[0.9]">
-      Wir schaffen und<br>erhalten Raum
-    </span>
-    <div class="md:columns-2 md:gap-40">
-      Die Stiftung Wunderland bietet Raum für soziale, kulturelle, ökologische sowie gemeinnützige Projekte. Mit einem Fokus auf Nachhaltigkeit, Sorgfalt und Transparenz schaffen wir langfristige Lösungen, fördern Partnerschaften und ergänzen staatliche Aktivitäten. Unser Handeln basiert auf Respekt, Solidarität und Idealismus.
+  {{ if is_homepage }}
+    <div class="">
+      <h1 class="text-3xl leading-[1]">
+        Stiftung Wunderland
+      </h1>
+      <span class="text-4xl leading-[0.9]">
+        Wir schaffen und<br>erhalten Raum
+      </span>
+      <div class="md:columns-2 md:gap-40">
+        Die Stiftung Wunderland bietet Raum für soziale, kulturelle, ökologische sowie gemeinnützige Projekte. Mit einem Fokus auf Nachhaltigkeit, Sorgfalt und Transparenz schaffen wir langfristige Lösungen, fördern Partnerschaften und ergänzen staatliche Aktivitäten. Unser Handeln basiert auf Respekt, Solidarität und Idealismus.
+      </div>
     </div>
-  </div>
+  {{ else }}
+    <div class="huge:max-w-[60%] huge:mx-auto">
+      {{ template_content }}
+    </div>
+  {{ /if }}
 </main>
