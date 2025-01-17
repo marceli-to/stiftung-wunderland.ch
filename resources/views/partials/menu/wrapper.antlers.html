@@ -8,12 +8,12 @@
     x-transition:leave-start="opacity-100"
     x-transition:leave-end="opacity-0"
     class="bg-cherry text-white fixed w-full h-dvh left-0 top-0">
-    <div class="w-full h-dvh flex items-center justify-start relative max-w-page mx-auto px-20">
+    <div class="w-full h-dvh flex items-center justify-start relative max-w-outer mx-auto px-20">
       <ul class="flex flex-col gap-y-20">
         {{ nav:main }}
           {{ partial:menu/item }}
         {{ /nav:main }}
       </ul>
-      {{ partial:menu/buttons/hide class="block size-24 md:size-48 absolute right-20 md:right-40 top-20" }}
+      {{ partial:menu/buttons/hide class="block size-24 md:size-48 absolute right-20 md:right-50 top-25" }}
     </div>
   </nav>

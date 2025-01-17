@@ -22,7 +22,8 @@ export default {
       },
 
       maxWidth: {
-        page: '125rem',
+        outer: '125rem', // 2000px
+        inner: '70%'
       },
 
       fontFamily: {
@@ -38,18 +39,11 @@ export default {
       },      
 
       fontSize: {
-        // 'xs': '0.75rem',  // 12px
-        // 'sm': '0.8125rem', // 13px
-        // 'md': '1.0625rem', // 17px
-        // 'lg': '1.25rem',   // 20px
-        // 'xl': '1.3125rem', // 21px
-        // '2xl': '1.375rem', // 22px
-        // '3xl': '1.6875rem', // 27px
-        // '4xl': '2.5rem',   // 40px
-        'xs': 'clamp(1.125rem, 1.25vw, 1.25rem)',
-        'sm': 'clamp(1.25rem, 2vw, 2.5rem)',
-        '3xl': 'clamp(2.4rem, 4.5vw, 5rem)',
-        '4xl': 'clamp(4rem, 9vw, 11rem)'
+        'xxs': 'clamp(1.125rem, 1.25vw, 1.5rem)', // 18px -> 24px
+        'xs': 'clamp(1.25rem, 1.75vw, 2rem)', // 20px -> 32px
+        'sm': 'clamp(1.5rem, 2vw, 2.5rem)', // 24px -> 40px
+        '3xl': 'clamp(2.5rem, 5.25vw, 6rem)', // 40px -> 96px
+        '4xl': 'clamp(4rem, 9vw, 11rem)' // 64px -> 176px
       },
     
       zIndex: {

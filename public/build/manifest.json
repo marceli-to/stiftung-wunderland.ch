@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-589c2661.css",
+    "file": "assets/app-fcec6d91.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -20,15 +20,8 @@
     "file": "assets/Tisa-Regular-a6abe4e7.woff2",
     "src": "resources/css/fonts/Tisa-Regular.woff2"
   },
-  "resources/js/app.css": {
-    "file": "assets/app-784f8f85.css",
-    "src": "resources/js/app.css"
-  },
   "resources/js/app.js": {
-    "css": [
-      "assets/app-784f8f85.css"
-    ],
-    "file": "assets/app-43672d97.js",
+    "file": "assets/app-350ff511.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }
