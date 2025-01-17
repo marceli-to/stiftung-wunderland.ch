@@ -5,6 +5,20 @@ tabs:
       -
         fields:
           -
+            handle: type
+            field:
+              options:
+                -
+                  key: real_estate
+                  value: Liegenschaft
+                -
+                  key: participation
+                  value: Beteiligung
+              default: real_estate
+              type: select
+              display: Typ
+              localizable: false
+          -
             handle: title
             field:
               type: text

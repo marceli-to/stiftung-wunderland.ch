@@ -1,0 +1,22 @@
+<article class="border-t border-t-scarlet pt-40 mb-40 last-of-type:mb-0">
+  <a 
+    href="{{ url }}"
+    class="text-xl text-black hover:text-scarlet transition-colors leading-[1] lg:grid lg:grid-cols-12 lg:gap-x-60"
+    title="{{ title }}">
+    <span class="lg:col-span-3">
+      {{ if image }}
+        {{ partial:media/image 
+          class="block w-full h-auto"
+          preset="focal-16-10"
+          sizes="['md', 'lg']"
+          :image="image" }}
+      {{ /if }}
+    </span>
+    <span class="lg:col-span-9 flex justify-between mt-20 lg:mt-0">
+      <h2>
+        {{ title }}{{ if byline }}&mdash;<br>{{ byline }}{{ /if }}
+      </h2>
+      {{ partial:icons/arrow }}
+    </span>
+  </a>
+</article>

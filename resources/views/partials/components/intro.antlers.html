@@ -1,4 +1,4 @@
-<div class="mt-100 md:mt-200 lg:mt-0 lg:min-h-[calc(100vh_-_145px)] lg:flex lg:flex-col lg:justify-end lg:pb-80">
+<div class="mt-100 md:mt-200 lg:mt-0 lg:min-h-[calc(100vh_-_145px)] lg:flex lg:flex-col lg:justify-end">
   {{ if title }}
     <h1 class="relative z-20">
       <span class="relative z-20">
@@ -13,9 +13,21 @@
       {{ byline }}
     </span>
   {{ /if }}
+
+  <div class="justify-center w-full hidden lg:flex lg:mt-20">
+    <a 
+      href="javascript:;"
+      class="inline-flex items-center justify-center size-48 group"
+      x-data
+      @click="document.querySelector('[data-name=\'intro-content\']').scrollIntoView({ behavior: 'smooth' })">
+      {{ partial:icons/chevron-down class="w-28 h-auto group-hover:translate-y-4 transition-transform" }}
+    </a>
+  </div>
 </div>
 
-<div>
+<div 
+  class="scroll-mt-145"
+  data-name="intro-content">
 
   {{ if image }}
     {{ partial:media/image 

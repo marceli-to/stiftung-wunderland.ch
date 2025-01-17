@@ -12,8 +12,3 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::statamic('/work/kategorie/{category?}', 'work.index', [
-  'layout' => 'layout.default',
-  'title' => 'Work',
-]);

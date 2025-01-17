@@ -41,6 +41,11 @@ tabs:
                       fields:
                         -
                           import: editor
+                    realestate_preview:
+                      display: 'Liegenschaften (Vorschau)'
+                      instructions: 'Liegenschaften (Vorschau) hinzufügen'
+                      icon: text-formatting-wrap-image-left
+                      fields: {  }
   seo:
     display: SEO
     sections:

@@ -1,0 +1,9 @@
+<div class="mt-20 lg:mt-40">
+  {{ collection:realestate as="realestates" }}
+    {{ if realestates }}
+      {{ realestates }}
+        {{ partial:realestate/preview_item }}
+      {{ /realestates }}
+    {{ /if }}
+  {{ /collection:realestate }}
+</div>
