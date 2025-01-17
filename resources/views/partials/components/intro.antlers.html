@@ -1,6 +1,6 @@
 <div class="mt-100 md:mt-200 lg:mt-0 lg:min-h-[calc(100vh_-_145px)] lg:flex lg:flex-col lg:justify-end lg:pb-80">
   {{ if title }}
-    <h1 class="mb-10 relative z-20">
+    <h1 class="relative z-20">
       <span class="relative z-20">
         {{ title }}
       </span>
@@ -9,7 +9,7 @@
   {{ /if }}
 
   {{ if byline }}
-    <span class="block text-4xl text-balance leading-[0.9] relative z-20">
+    <span class="block text-2xl text-balance leading-[0.9] relative z-20">
       {{ byline }}
     </span>
   {{ /if }}
@@ -26,7 +26,7 @@
   {{ /if }}
 
   {{ if text }}
-    <div class="mt-20 text-sm lg:columns-2 lg:gap-40">
+    <div class="mt-20 text-lg lg:columns-2 lg:gap-40">
       {{ text }}
     </div>
   {{ /if }}
@@ -36,7 +36,7 @@
       <a 
         href="{{ link }}" 
         title="{{ link_text ?? 'Die Liegenschaften der Stiftung Wunderland'}}"
-        class="underline underline-offset-2 lg:underline-offset-4 decoration-1 hover:text-scarlet transition-colors text-sm">
+        class="underline underline-offset-2 lg:underline-offset-4 decoration-1 hover:text-scarlet transition-colors text-lg">
         {{ link_text }}
       </a>
     </div>

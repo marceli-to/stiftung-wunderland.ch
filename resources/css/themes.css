@@ -1,0 +1,35 @@
+/* Themes */
+.theme-white {
+  @apply bg-white;
+  header {
+    @apply bg-white;
+  }
+}
+
+.theme-scarlet {
+  @apply bg-scarlet;
+  header {
+    @apply bg-scarlet;
+  }
+}
+
+.theme-cherry {
+  @apply bg-cherry;
+  header {
+    @apply bg-cherry;
+  }
+}
+
+.theme-blush {
+  @apply bg-blush;
+  header {
+    @apply bg-ivory;
+  }
+}
+
+.theme-ivory {
+  @apply bg-ivory;
+  header {
+    @apply bg-ivory;
+  }
+}

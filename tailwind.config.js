@@ -39,11 +39,11 @@ export default {
       },      
 
       fontSize: {
-        'xxs': 'clamp(1.125rem, 1.25vw, 1.5rem)', // 18px -> 24px
-        'xs': 'clamp(1.25rem, 1.75vw, 2rem)', // 20px -> 32px
-        'sm': 'clamp(1.5rem, 2vw, 2.5rem)', // 24px -> 40px
-        '3xl': 'clamp(2.5rem, 5.25vw, 6rem)', // 40px -> 96px
-        '4xl': 'clamp(4rem, 9vw, 11rem)' // 64px -> 176px
+        'sm': 'clamp(1.125rem, 1.25vw, 1.5rem)', // 18px -> 24px
+        'md': 'clamp(1.25rem, 1.75vw, 2rem)', // 20px -> 32px
+        'lg': 'clamp(1.5rem, 2vw, 2.5rem)', // 24px -> 40px
+        'xl': 'clamp(2.5rem, 5.25vw, 6rem)', // 40px -> 96px
+        '2xl': 'clamp(4rem, 9vw, 11rem)' // 64px -> 176px
       },
     
       zIndex: {

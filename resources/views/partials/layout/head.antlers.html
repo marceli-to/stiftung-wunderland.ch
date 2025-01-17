@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ site:short_locale }}" class="scroll-smooth overflow-y-auto {{ page_class ?? '' }}">
+<html lang="{{ site:short_locale }}" class="scroll-smooth overflow-y-auto {{ page_class ?? '' }} {{ is_homepage ? 'is_homepage' : '' }}">
 <head>
 <meta charset="utf-8">
 {{ if is_homepage }}<title>{{ config:app:name }}</title>{{ else }}<title>{{ open_graph_title ?? title ?? site:name }} • {{ config:app:name }}</title>{{ endif }}

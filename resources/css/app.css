@@ -1,4 +1,5 @@
 @import "typo/webfonts.css";
+@import "themes";
 
 @tailwind base;
 @tailwind components;
@@ -31,26 +32,9 @@ main strong {
 }
 
 main h1 {
-  @apply text-3xl leading-[1]
+  @apply text-xl leading-[1] mb-40 lg:mb-80
 }
 
-/* Themes */
-.theme-white {
-  @apply bg-white;
-}
-
-.theme-scarlet {
-  @apply bg-scarlet;
-}
-
-.theme-cherry {
-  @apply bg-cherry;
-}
-
-.theme-blush {
-  @apply bg-blush;
-}
-
-.theme-ivory {
-  @apply bg-ivory;
+.is_homepage main h1 {
+  @apply mb-10
 }
