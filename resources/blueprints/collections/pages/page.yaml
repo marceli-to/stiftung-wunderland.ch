@@ -27,6 +27,13 @@ tabs:
                   display: Hauptelemente
                   icon: addon-boxes-stack
                   sets:
+                    intro:
+                      display: Intro
+                      instructions: 'Intro für Homepage hinzufügen'
+                      icon: text-formatting-image-bottom
+                      fields:
+                        -
+                          import: intro
                     editor:
                       display: Editor
                       instructions: 'Texteditor hinzufügen'

@@ -1,0 +1,45 @@
+<div class="mt-100 md:mt-200 lg:mt-0 lg:min-h-[calc(100vh_-_145px)] lg:flex lg:flex-col lg:justify-end lg:pb-80">
+  {{ if title }}
+    <h1 class="mb-10 relative z-20">
+      <span class="relative z-20">
+        {{ title }}
+      </span>
+      {{ partial:icons/house class="absolute z-10 top-0 2xl:-top-30 w-[24vw] max-w-[340px] h-auto left-1/2 -translate-y-1/2 -translate-x-1/2 2xl:-translate-x-[92%]" }}
+    </h1>
+  {{ /if }}
+
+  {{ if byline }}
+    <span class="block text-4xl text-balance leading-[0.9] relative z-20">
+      {{ byline }}
+    </span>
+  {{ /if }}
+</div>
+
+<div>
+
+  {{ if image }}
+    {{ partial:media/image 
+      class="w-full h-auto mt-20"
+      preset="focal-16-10"
+      sizes="['md', 'lg', 'xl', '2xl']"
+      :image="image" }}
+  {{ /if }}
+
+  {{ if text }}
+    <div class="mt-20 text-sm lg:columns-2 lg:gap-40">
+      {{ text }}
+    </div>
+  {{ /if }}
+
+  {{ if link }}
+    <div class="mt-40 lg:mt-80 2xl:mt-120">
+      <a 
+        href="{{ link }}" 
+        title="{{ link_text ?? 'Die Liegenschaften der Stiftung Wunderland'}}"
+        class="underline underline-offset-2 lg:underline-offset-4 decoration-1 hover:text-scarlet transition-colors text-sm">
+        {{ link_text }}
+      </a>
+    </div>
+  {{ /if }}
+</div>
+{{#  #}}

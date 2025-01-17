@@ -1,0 +1,51 @@
+title: Intro
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      localizable: false
+  -
+    handle: byline
+    field:
+      type: textarea
+      display: Byline
+      localizable: false
+  -
+    handle: image
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: Image
+      localizable: false
+  -
+    handle: text
+    field:
+      buttons:
+        - bold
+        - unorderedlist
+        - removeformat
+        - anchor
+      toolbar_mode: floating
+      remove_empty_nodes: true
+      type: bard
+      display: Text
+      localizable: false
+  -
+    handle: link
+    field:
+      collections:
+        - pages
+      type: link
+      display: Link
+      localizable: false
+      width: 50
+  -
+    handle: link_text
+    field:
+      type: text
+      display: 'Link Text'
+      localizable: false
+      width: 50

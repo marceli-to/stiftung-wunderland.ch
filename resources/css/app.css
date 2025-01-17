@@ -31,7 +31,7 @@ main strong {
 }
 
 main h1 {
-  @apply text-3xl leading-[1] mb-40 md:mb-70
+  @apply text-3xl leading-[1]
 }
 
 /* Themes */
