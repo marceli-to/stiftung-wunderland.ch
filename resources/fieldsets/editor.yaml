@@ -29,6 +29,10 @@ fields:
           instructions: 'Inhaltselemente hinzufügen'
           icon: addon-boxes-stack
           sets:
-            neues_set:
-              display: 'Neues Set'
-              fields: {  }
+            image_text:
+              display: Bild/Text
+              instructions: 'Bild/Text Element hinzufügen'
+              icon: text-formatting-image-left
+              fields:
+                -
+                  import: image_text

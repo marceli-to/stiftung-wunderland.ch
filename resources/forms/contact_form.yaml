@@ -1,0 +1,11 @@
+title: Kontakt
+honeypot: websiite
+email:
+  -
+    id: m6528ovr
+    to: m@marceli.to
+    reply_to: no-reply@stiftung-wunderland.ch
+    subject: 'Anfrage Kontaktformular'
+    html: email/html/contact
+    text: email/text/contact
+    mailer: smtp

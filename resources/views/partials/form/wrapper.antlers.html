@@ -1,0 +1,37 @@
+<div class="my-40 lg:my-80">
+  
+  <h2 class="mb-20">{{ title }}</h2>
+
+  {{ form:contact_form class="flex flex-col gap-y-15 lg:gap-y-20" }}
+
+    {{ if errors }}
+      {{ partial:form/elements/errors }}
+        Bitte überprüfen Sie Ihre Eingaben!
+      {{ /partial:form/elements/errors }}
+    {{ /if }}
+
+    {{ if success }}
+      {{ partial:form/elements/success }}
+        Vielen Dank für Ihre Anfrage.
+      {{ /partial:form/elements/success }}
+    {{ /if }}
+
+    {{ partial:form/elements/honeypot }}
+
+    {{ fields }}
+      {{ partial:form/elements/group }}
+        {{ partial:form/elements/label class="{{ error ? 'text-red-600' : ''}}" }}
+            {{ placeholder }}
+        {{ /partial:form/elements/label }}
+        {{ partial:form/elements/field :name="handle" :type="type" :placeholder="placeholder" class="{{ error ? '!border-red-600' : ''}}" }}
+      {{ /partial:form/elements/group }}
+    {{ /fields }}
+
+    {{ partial:form/elements/privacy }}
+
+    {{ partial:form/elements/group class="flex justify-center !mt-20 lg:!mt-40" }}
+      {{ partial:form/elements/button label="Senden" }}
+    {{ /partial:form/elements/group}}
+
+  {{ /form:contact_form }}
+</div>

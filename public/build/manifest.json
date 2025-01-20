@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-81e890cc.css",
+    "file": "assets/app-7e47a886.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -21,7 +21,7 @@
     "src": "resources/css/fonts/Tisa-Regular.woff2"
   },
   "resources/js/app.js": {
-    "file": "assets/app-350ff511.js",
+    "file": "assets/app-dfb0681b.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }

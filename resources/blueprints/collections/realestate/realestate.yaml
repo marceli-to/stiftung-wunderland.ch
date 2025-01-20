@@ -79,6 +79,13 @@ tabs:
       -
         fields:
           -
+            handle: page_theme
+            field:
+              default: theme-blush
+              type: hidden
+              display: 'Page theme'
+              localizable: false
+          -
             handle: slug
             field:
               type: slug

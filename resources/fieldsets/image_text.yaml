@@ -1,0 +1,29 @@
+title: Bild/Text
+fields:
+  -
+    handle: image
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: Bild
+      localizable: false
+  -
+    handle: content
+    field:
+      buttons:
+        - h2
+        - h3
+        - bold
+        - unorderedlist
+        - removeformat
+        - anchor
+      toolbar_mode: floating
+      remove_empty_nodes: true
+      link_collections:
+        - pages
+        - realestate
+      container: assets
+      type: bard
+      display: Text
+      localizable: false

@@ -4,4 +4,26 @@
     {{ text }}
   {{ /if }}
 
+  {{ if type == 'image_text' }}
+
+  <div class="md:grid md:grid-cols-12 md:gap-x-20 xl:gap-x-40">
+
+    <div class="md:col-span-4 xl:col-span-3 mb-40 md:mb-0">
+      {{ if image }}
+        {{ partial:media/image 
+          class="block w-full h-auto"
+          :sizes="['md', 'lg']"
+          :image="image" }}
+      {{ /if }}
+    </div>
+    <div class="md:col-span-8 xl:col-span-9">
+      {{ if content }}
+        {{ content }}
+      {{ /if }}
+    </div>
+
+  </div>
+  {{ /if }}
+
+
 {{ /editor }}

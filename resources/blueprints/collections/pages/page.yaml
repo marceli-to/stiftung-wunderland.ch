@@ -46,6 +46,13 @@ tabs:
                       instructions: 'Liegenschaften (Vorschau) hinzufügen'
                       icon: text-formatting-wrap-image-left
                       fields: {  }
+                    contact_form:
+                      display: Kontaktformular
+                      instructions: 'Kontaktformular hinzufügen'
+                      icon: form-text-field
+                      fields:
+                        -
+                          import: contact_form
   seo:
     display: SEO
     sections:

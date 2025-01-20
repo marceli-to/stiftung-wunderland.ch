@@ -1,0 +1,43 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: name
+            field:
+              type: text
+              display: 'Vorname, Name'
+              localizable: false
+              validate:
+                - required
+              placeholder: 'Vorname, Name'
+          -
+            handle: email
+            field:
+              type: text
+              display: E-Mail
+              localizable: false
+              validate:
+                - required
+                - email
+              placeholder: E-Mail-Adresse
+          -
+            handle: phone
+            field:
+              type: text
+              display: Telefonnummer
+              localizable: false
+              validate:
+                - required
+              placeholder: Telefonnummer
+          -
+            handle: message
+            field:
+              type: textarea
+              display: Nachricht
+              localizable: false
+              validate:
+                - required
+              placeholder: Nachricht

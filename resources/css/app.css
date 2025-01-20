@@ -16,7 +16,7 @@ main {
 
 main p:not(:last-child),
 main ul:not(:last-child) {
-  @apply mb-20 lg:mb-30
+  @apply mb-20 lg:mb-40
 }
 
 main ul {
@@ -24,7 +24,7 @@ main ul {
 }
 
 main li {
-  @apply ml-12
+  @apply ml-24 xl:ml-38
 }
 
 main strong {
@@ -34,6 +34,19 @@ main strong {
 main h1 {
   @apply text-xl leading-[1] mb-40 lg:mb-80
 }
+
+main h2 {
+  @apply font-tisa-bold font-normal mb-0
+}
+
+main a {
+  @apply underline underline-offset-4 decoration-1 hover:text-scarlet transition-colors
+}
+
+.page-privacy main h2 {
+  @apply  mb-0
+}
+
 
 .is_homepage main h1 {
   @apply mb-10

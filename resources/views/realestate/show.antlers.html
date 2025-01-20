@@ -1,1 +1,21 @@
-<h1>{{ title }}</h1>
+<h1>{{ title }}{{ if byline }}&mdash;<br>{{ byline }}{{ /if }}</h1>
+
+{{ if intro }}
+  <div class="mb-40 lg:mb-80">
+    {{ intro }}
+  </div>
+{{ /if }}
+
+{{ if image }}
+  <div class="mb-40 lg:mb-80">
+    {{ partial:media/image 
+      class="block w-full h-auto max-w-3xl mx-auto"
+      preset="focal-16-10"
+      :sizes="['md', 'lg']"
+      :image="image" }}
+  </div>
+{{ /if }}
+
+{{ if content }}
+  {{ content }}
+{{ /if }}

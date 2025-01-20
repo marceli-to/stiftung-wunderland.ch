@@ -1,0 +1,13 @@
+<select 
+  name="interest-selector"  
+  class="!outline-none bg-steel rounded-sm text-white px-8 py-10 pr-20 w-full appearance-none bg-[url(../icons/chevron-down.svg)] bg-[length:15px_auto] bg-[right_.5rem_center] bg-no-repeat js-apartments">
+  <option value="">{{ placeholder }}</option>
+  {{ if field == 'interest' }}
+    <option value="Alle 2.5-Zimmerwohnungen">Alle 2.5-Zimmerwohnungen</option>
+    <option value="Alle 3.5-Zimmerwohnungen">Alle 3.5-Zimmerwohnungen</option>
+    <option value="Alle 4.5-Zimmerwohnungen">Alle 4.5-Zimmerwohnungen</option>
+    {{ collection:objects }}
+      <option value="Wohnung {{ number }}" {{ value == number ? 'selected' : ''}}>Wohnung {{ number }}</option>
+    {{ /collection:objects }}
+  {{ /if }}
+</select>
