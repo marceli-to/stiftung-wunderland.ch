@@ -1,0 +1,21 @@
+{{ collection:realestate as="realestates" type:is="real_estate" }}
+  {{ if realestates }}
+    <div class="mt-20 lg:mt-40">
+      <h2>{{ "Die Liegenschaften der Stiftung Wunderland:" | trans }}</h2>
+      {{ realestates }}
+        {{ partial:realestate/listing_item }}
+      {{ /realestates }}
+    </div>
+  {{ /if }}
+{{ /collection:realestate }}
+
+{{ collection:realestate as="realestates" type:is="participation" }}
+  {{ if realestates }}
+    <div class="mt-20 lg:mt-40">
+      <h2>{{ "Die Beteiligungen der Stiftung Wunderland:" | trans }}</h2>
+      {{ realestates }}
+        {{ partial:realestate/listing_item }}
+      {{ /realestates }}
+    </div>
+  {{ /if }}
+{{ /collection:realestate }}

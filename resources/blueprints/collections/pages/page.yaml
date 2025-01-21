@@ -43,8 +43,13 @@ tabs:
                           import: editor
                     realestate_preview:
                       display: 'Liegenschaften (Vorschau)'
-                      instructions: 'Liegenschaften (Vorschau) hinzufügen'
+                      instructions: 'Vorschau der Liegenschaften hinzufügen'
                       icon: text-formatting-wrap-image-left
+                      fields: {  }
+                    realestate_listing:
+                      display: 'Liegenschaften (Liste)'
+                      instructions: 'Liste der Liegenschaften hinzufügen'
+                      icon: file-content-list
                       fields: {  }
                     contact_form:
                       display: Kontaktformular

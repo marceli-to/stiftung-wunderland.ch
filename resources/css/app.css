@@ -7,6 +7,10 @@
 
 [x-cloak] { display: none !important; }
 
+::selection {
+  @apply text-black bg-blush
+}
+
 body {
 }
 

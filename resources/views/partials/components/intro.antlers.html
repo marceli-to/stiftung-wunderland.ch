@@ -31,14 +31,14 @@
 
   {{ if image }}
     {{ partial:media/image 
-      class="w-full h-auto mt-20"
-      preset="focal-16-10"
+      class="w-full h-auto lg:aspect-[16/8] object-cover mt-30"
+      preset="focal-16-9"
       sizes="['md', 'lg', 'xl', '2xl']"
       :image="image" }}
   {{ /if }}
 
   {{ if text }}
-    <div class="mt-20 text-lg lg:columns-2 lg:gap-40">
+    <div class="mt-30 lg:mt-60 text-lg lg:columns-2 lg:gap-40">
       {{ text }}
     </div>
   {{ /if }}
