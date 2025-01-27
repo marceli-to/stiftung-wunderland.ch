@@ -1,0 +1,12 @@
+<div class="swiper relative {{ class }}" {{ selector }}>
+  <div class="swiper-wrapper">
+    {{ slot }}
+  </div>
+  {{ if hasNavigation }}
+    {{ partial:components/swiper/buttons/prev class="{{ prevClass }}" }}
+    {{ partial:components/swiper/buttons/next class="{{ nextClass }}" }}
+  {{ /if }}
+  {{ if hasPagination }}
+    {{ partial:components/swiper/pagination }}
+  {{ /if }}
+</div>

@@ -4,3 +4,4 @@ Alpine.start();
 
 import './bootstrap';
 import './form.js';
+import './swiper.js';

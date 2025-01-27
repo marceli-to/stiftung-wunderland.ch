@@ -37,6 +37,25 @@
       :image="image" }}
   {{ /if }}
 
+  {{ if images }}
+    {{ partial:components/swiper/wrapper 
+      selector="data-gallery"
+      hasNavigation="true" 
+      prevClass="left-30 md:left-50 text-white hover:text-lemon"
+      nextClass="right-30 md:right-50 text-white hover:text-lemon" }}
+      {{ images }}
+        {{ partial:components/swiper/slide }}
+          {{ partial:media/image 
+            class="w-full h-auto lg:aspect-[16/8] object-cover mt-30"
+            preset="focal-16-9"
+            sizes="['md', 'lg', 'xl', '2xl']"
+            :image="url" }}
+        {{ /partial:components/swiper/slide }}
+      {{ /images }}
+    {{ /partial:components/swiper/wrapper }}
+  {{ /if }}
+
+
   {{ if text }}
     <div class="mt-30 lg:mt-60 text-lg lg:columns-2 lg:gap-40">
       {{ text }}

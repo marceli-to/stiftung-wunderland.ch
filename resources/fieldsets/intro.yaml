@@ -21,6 +21,13 @@ fields:
       display: Image
       localizable: false
   -
+    handle: images
+    field:
+      container: assets
+      type: assets
+      display: Bilder
+      localizable: false
+  -
     handle: text
     field:
       buttons:
