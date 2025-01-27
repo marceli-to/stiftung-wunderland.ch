@@ -13,14 +13,6 @@ fields:
       display: Byline
       localizable: false
   -
-    handle: image
-    field:
-      max_files: 1
-      container: assets
-      type: assets
-      display: Image
-      localizable: false
-  -
     handle: images
     field:
       container: assets
