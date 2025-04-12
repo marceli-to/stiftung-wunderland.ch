@@ -85,6 +85,7 @@ tabs:
               type: slug
               localizable: true
               validate: 'max:200'
+              show_regenerate: true
           -
             handle: parent
             field:
