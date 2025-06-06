@@ -1,7 +1,7 @@
 {{ if type == 'textarea' }}
   <textarea 
     name="{{ name }}"
-    placeholder="{{ placeholder }}"
+    placeholder="{{ placeholder | trans }}"
     class="!appearance-none w-full min-h-100 lg:min-h-200 border border-black py-5 lg:py-10 px-10 lg:px-20 !outline-none !rounded-none placeholder:text-black/20 {{ class }}">
 </textarea>
 {{ else }}
@@ -9,7 +9,7 @@
   type="{{ type ?? 'text' }}"
   name="{{ name }}"
   value="{{ value }}"
-  placeholder="{{ placeholder }}"
+  placeholder="{{ placeholder | trans }}"
   class="!appearance-none w-full border border-black py-5 lg:py-10 px-10 lg:px-20 !outline-none !rounded-none placeholder:text-black/20 {{ class }}" />
 {{ /if }}
 

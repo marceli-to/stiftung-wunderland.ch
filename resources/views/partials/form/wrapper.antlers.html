@@ -3,7 +3,7 @@
   <h2 class="mb-20">{{ title }}</h2>
 
   {{ form:contact_form class="flex flex-col gap-y-15 lg:gap-y-20" }}
-
+    <input type="text" name="website" class="field-website" />
     {{ if errors }}
       {{ partial:form/elements/errors }}
         Bitte überprüfen Sie Ihre Eingaben!
@@ -21,7 +21,7 @@
     {{ fields }}
       {{ partial:form/elements/group }}
         {{ partial:form/elements/label class="{{ error ? 'text-red-600' : ''}}" }}
-            {{ placeholder }}
+            {{ placeholder | trans }}
         {{ /partial:form/elements/label }}
         {{ partial:form/elements/field :name="handle" :type="type" :placeholder="placeholder" class="{{ error ? '!border-red-600' : ''}}" }}
       {{ /partial:form/elements/group }}
