@@ -1,5 +1,9 @@
 {
   "fr": "Français",
   "de": "Deutsch",
-  "Vorname, Name": "Prénom, Nom"
+  "Vorname, Name": "Prénom, Nom",
+  "E-Mail-Adresse": "Adresse e-mail",
+  "Telefonnummer": "Numéro de téléphone",
+  "Nachricht": "Message",
+  "Ich habe die <a href=\"/datenschutz\" target=\"_blank\" class=\"inline-block mx-4 underline underline-offset-4 decoration-1 hover:no-underline\">Datenschutzerklärung</a> gelesen und akzeptiere diese": "J’ai pris connaissance de la <a href=\"/datenschutz\" target=\"_blank\" class=\"inline-block mx-4 underline underline-offset-4 decoration-1 hover:no-underline\">déclaration de confidentialité</a> et je l’accepte."
 }
