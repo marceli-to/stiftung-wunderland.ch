@@ -1,3 +1,7 @@
 <div class="text-sm">
-  Ich habe die <a href="/datenschutz" title="Datenschutzerklärung" target="_blank">Datenschutzerklärung</a> zur Kenntnis genommen und erkläre mich damit einverstanden.
+  {{ if site:handle == 'fr' }}
+    J’ai pris connaissance de la <a href='/fr/declaration-de-confidentialite' target='_blank' class='inline-block mx-4 underline underline-offset-4 decoration-1 hover:no-underline'>déclaration de confidentialité</a> et je l’accepte.
+  {{ else }}
+    Ich habe die <a href='/datenschutz' target='_blank' class='inline-block mx-4 underline underline-offset-4 decoration-1 hover:no-underline'>Datenschutzerklärung</a> gelesen und akzeptiere diese
+  {{ /if }}
 </div>
