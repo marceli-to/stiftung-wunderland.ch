@@ -1,1 +1,17 @@
-<input type="text" name="website" class="field-website" />
+{{# Honeypot field - positioned off-screen to catch bots #}}
+<div style="position: absolute; left: -9999px; top: -9999px;" aria-hidden="true">
+  <input
+    type="text"
+    name="phone_verification_code"
+    tabindex="-1"
+    autocomplete="nope"
+    data-form-type="other"
+    value=""
+  />
+</div>
+
+{{# Time-based check - form load timestamp #}}
+<input type="hidden" name="_form_loaded" value="{{ now | timestamp }}" />
+
+{{# JavaScript token - populated after delay by JS #}}
+<input type="hidden" name="_js_token" value="" id="js-token" />

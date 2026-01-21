@@ -13,4 +13,13 @@
       }
     });
   });
+
+  // Spam prevention: Generate JS token after 2-second delay
+  // Bots typically don't wait, so this helps filter automated submissions
+  setTimeout(function() {
+    const tokenField = document.getElementById('js-token');
+    if (tokenField) {
+      tokenField.value = 'human_' + Date.now();
+    }
+  }, 2000);
 })();
